@@ -979,6 +979,11 @@ header .mega-menu .menu-links li a i {
     left: 0;
     background-color: var(--main-color);
     border: none;
+    transition: width var(--main-transition) linear;
+    -webkit-transition: width var(--main-transition) linear;
+    -moz-transition: width var(--main-transition) linear;
+    -ms-transition: width var(--main-transition) linear;
+    -o-transition: width var(--main-transition) linear;
 }
 /* End Skills */
 
@@ -1111,7 +1116,7 @@ header .mega-menu .menu-links li a i {
 }
 .events .container .info .time .unit span:first-child {
     font-size: 35px;
-    padding: 20px;
+    padding: 10px;
     color: var(--main-color);
     font-weight: bold;
 }
