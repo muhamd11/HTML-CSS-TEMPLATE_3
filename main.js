@@ -10,6 +10,9 @@ window.addEventListener("scroll", () => {
 let section = document.querySelector(".our-skills");
 let spans = document.querySelectorAll(".our-skills .skill .progress span");
 
+// go up arrow 
+let up = document.querySelector(".go-up")
+
 window.onscroll = function () {
   if (window.scrollY >= section.offsetTop - 300) {
     spans.forEach((span) => {
@@ -22,6 +25,8 @@ window.onscroll = function () {
     }
     started = true;
   }
+  // go up arrow
+  window.scrollY >= 1000 ? up.classList.add("show") : up.classList.remove("show")
 };
 
 // our stats section
@@ -65,3 +70,6 @@ let counter = setInterval(() => {
     clearInterval(counter);
   }
 }, 1000);
+
+
+
